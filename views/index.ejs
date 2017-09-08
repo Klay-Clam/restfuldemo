@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RESTful Demo</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="https://raw.githubusercontent.com/Klay-Clam/Tank/master/public/images/logo.png" type="image/x-icon"/>
+    <!--<link rel="shortcut icon" href="/favicon.ico">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="/stylesheets/light7.min.css">
+    <link rel="stylesheet" href="/stylesheets/light7-swiper.min.css">
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav">
+            <!--<a class="icon icon-me pull-left open-panel"></a>-->
+            <h1 class="title">登录</h1>
+        </header>
+
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <div class="content-block">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">邮箱</div>
+                                    <div class="item-input">
+                                        <input type="text" id="email" placeholder="e-mail">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">密码</div>
+                                    <div class="item-input">
+                                        <input type="password" id="password" placeholder="password">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            <div class="content-block login-btn">
+                <div class="row">
+                    <div class="col-100"><a href="#" id="loginBtn" class="button button-big button-fill button-success">login</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 默认必须要执行$.init(),实际业务里一般不会在HTML文档里执行，通常是在业务页面代码的最后执行 -->
+<!--<script>$.init()</script>-->
+<script type='text/javascript' src='/javascripts/jquery.js' charset='utf-8'></script>
+<script type='text/javascript' src='/javascripts/light7.js' charset='utf-8'></script>
+<script type='text/javascript' src='/javascripts/light7-swiper.js' charset='utf-8'></script>
+
+<script src="/javascripts/login.js"></script>
+</body>
+</html>
