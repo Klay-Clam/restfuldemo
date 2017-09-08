@@ -4,12 +4,12 @@ var sha1 = require('simple-sha1');
 
 var timeToken = sha1.sync(String(new Date()));
 console.log("SHA-1: " + timeToken);
-var pwd = sha1.sync(String(sha1.sync('admin') + sha1.sync(String(new Date()))));
+var pwd = sha1.sync(String(sha1.sync('admin') + sha1.sync(timeToken)));
 var user_1 = new usersSchema({
     username: "admin",
     password: pwd,
     email:"hellodearclam@outlook.com",
-    firstLogin: true,
+    firstLogin: false,
     lastLoginTime: new Date(),
     keyToken: timeToken
 });
