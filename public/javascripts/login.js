@@ -1,7 +1,10 @@
 $(function () {
+    // import sha1 from '../../node_modules/simple-sha1/browser'
     var inputEvent = new OnBlurOrFocus($("#email"));
     inputEvent._blur();
     inputEvent._focus();
+    var keyToken = '';
+    login();
 });
 
 /*
@@ -36,11 +39,13 @@ function OnBlurOrFocus(input) {
                 dataType: "json",
                 success: (data) => {
                     // 用户是否存在
-                    console.log(data);
+                    //console.log(data);
                     if (!data) {
-                        $.toast("邮箱未注册");
+                        // $.toast("邮箱未注册");
                     } else {
-                        $.toast("该邮箱可用");
+                        // $.toast("该邮箱可用");
+                        console.log(data);
+                        keyToken = data.keyToken;
                     }
                 },
                 error: function (err) {
@@ -64,9 +69,13 @@ function OnBlurOrFocus(input) {
 function login() {
      // 监听 登录 按钮的点击事件
     $("#loginBtn").on("click",function(){
+        if(keyToken === undefined){
+            // $.toast("检查邮箱");
+        }
+        console.log(keyToken);
         // hash 散列化加盐之后的密码
-        console.log(pwd);
-        let pwd = sha1.sync(String(sha1.sync($("#password").val()) + sha1.sync(data.timeToken)));
+        // console.log(pwd);
+        let pwd = hex_sha1(String(hex_sha1($("#password").val()) + hex_sha1(keyToken)));
         const url = "/users/login";
         $.ajax({
             url: url,
@@ -79,12 +88,12 @@ function login() {
             success : (data) => {
                 console.log(data);
                 if(data){
-                    $.toast("登陆成功");
+                    // $.toast("登陆成功");
                 }                                        
             },
             error: (err) => {
                 console.log(err);
-                $.toast("发生异常");
+                // $.toast("发生异常");
             }
         })
     })
