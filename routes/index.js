@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 });
 
 /** 判断用户的email 是否已经注册 */
-router.get('/users/email', function (req, res, next) {
+router.get('/user/email', function (req, res, next) {
   // res.send('respond with a resource');
   var reqStatus = req.query.email;
 
