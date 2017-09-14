@@ -8,3 +8,6 @@ var topicsSchema = new Schema({
     publisheTime: Date,
     owns: String
 })
+
+
+module.exports = mongoose.model('topics',topicsSchema);

@@ -9,6 +9,9 @@ var topics = require('../models/database/topics');
 router.get('/', function(req, res, next) {
   res.render('index');
 });
+router.get('/index', function(req, res, next) {
+  res.render('index');
+});
 
 /** 判断用户的email 是否已经注册 */
 router.get('/user/email', function (req, res, next) {
@@ -36,19 +39,25 @@ router.get('/user/email', function (req, res, next) {
 
 /** 用户登录，更新用户的登陆时间、是否第一次登录*/
 router.post('/users/login',function (req,res,next){
-  if(req){
+  if (req) {
     // console.log(req);
-    let conditions = {"email":req.body.email,"password":req.body.pwd};
-    let update = {"lastLoginTime":new Date(),"firstLogin":false};
-    users.findOneAndUpdate(conditions,update,function(err,result){
-      if(err){
-        console.log(err);
+    let conditions = { "email": req.body.email, "password": req.body.pwd };
+    let update = { "lastLoginTime": new Date(), "firstLogin": false };
+    users.findOneAndUpdate(conditions, update, function (error, result) {
+      
+      try{
+        console.log("hashed: " + (result.password === req.body.pwd));
+
+        res.send(true);     
+      }catch(err){
+        console.log('aaa');
         res.send(false);
-      }else{
-        console.log("jiami:"+ (result.password === req.body.pwd));
-        res.send(true);
       }
     });
   }
+})
+
+router.get('/content',function(req,res,next){
+  res.render('content');
 })
 module.exports = router;

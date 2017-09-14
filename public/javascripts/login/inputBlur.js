@@ -14,7 +14,7 @@ define('inputBlur',['jquery','sha1'],function($,hex_sha1){
     // 创建模块函数
     var onBlur = function(domNode){
         $(domNode).on('blur',function(){
-            console.log("input blured");
+            // console.log("input blured");
             data = {
                 email:$(domNode).val()
             };
@@ -25,14 +25,28 @@ define('inputBlur',['jquery','sha1'],function($,hex_sha1){
                 dataType:"json",
                 data: data,
                 success:function(data){
-                    console.log(data);
-                    keyToken = data.keyToken;
-                    // console.log("ajax:"+keyToken);
-                    // return keyToken;
-                    require(['buttonClick'],function(buttonClick,){
-
-                        buttonClick.buttonClickModule.onClick('#loginBtn','#password',keyToken)
-                    })
+                    // console.log(data);
+                    if(!data){
+                        // console.log("邮箱未注册");
+                        $("#emailCheckImg").css('display','inline-block');
+                        $("#emailCheckImg").attr('src','/images/wrong.png');
+                        require(['toast'],function(toast){
+                            // console.log(toast);
+                            $('.main').append(toast);
+                            $('.toast').children('span').text('检查邮箱');
+                            setTimeout(function(){
+                                $('.toast').css('display','none');
+                            },1000);
+                        });
+                    }else{
+                        // console.log("邮箱可用");
+                        $("#emailCheckImg").css('display','inline-block');
+                        $("#emailCheckImg").attr('src','/images/right.png');
+                        keyToken = data.keyToken;
+                        require(['buttonClick'],function(buttonClick){
+                            buttonClick.buttonClickModule.onClick('#loginBtn','#password',keyToken)
+                        });
+                    }
                 },
                 error:function(err){
                     console.log(err);

@@ -4,6 +4,8 @@ require.config({
         "jquery":"jquery",
         "inputBlur": "login/inputBlur",
         "buttonClick": "login/buttonClick",
+        "showPwd" : "login/showPwd",
+        "toast": "templates/toast",
         "sha1":"sha1"
     },
     shim:{
@@ -14,8 +16,10 @@ require.config({
 })
 
 // 按照需要，依次require需要的模块
-require(['jquery','sha1'],function($,hex_sha1){
+require(['jquery','sha1','showPwd'],function($,hex_sha1,showPwd){
     require(['inputBlur'],function(blurEvent){
         blurEvent.inputBlurModule.onBlur("#email");
-    })
+    });
+
+    showPwd();
 })

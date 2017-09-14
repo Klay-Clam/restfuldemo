@@ -14,10 +14,26 @@ var user_1 = new usersSchema({
     keyToken: timeToken
 });
 
-usersSchema.collection.insert(user_1,function(err,result){
+// usersSchema.collection.insert(user_1,function(err,result){
+//     if(err){
+//         console.log(err);
+//     }else{
+//         console.log(result);
+//     }
+// });
+
+let topic_1 = new topticsSchema({
+    title: '搬砖心得',
+    tags: ['日常'],
+    content: '今天的砖烫手 (╥╯^╰╥)',
+    publisheTime: new Date(),
+    owns: 'test@test.com'
+});
+
+topticsSchema.collection.insert(topic_1,function(err,result){
     if(err){
         console.log(err);
     }else{
         console.log(result);
     }
-});
+})
