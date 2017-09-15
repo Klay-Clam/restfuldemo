@@ -6,7 +6,10 @@ require.config({
         "buttonClick": "login/buttonClick",
         "showPwd" : "login/showPwd",
         "toast": "templates/toast",
+        "topic":"templates/topic",
+        "menu":"template/menu",
         "switchTab":"mainbody/switchTab",
+        "appendBanner":"mainbody/appendBanner", 
         "sha1":"sha1"
     },
     shim:{
