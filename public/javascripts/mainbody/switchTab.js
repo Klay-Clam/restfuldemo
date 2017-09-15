@@ -61,10 +61,5 @@ define("switchTab",['jquery','appendBanner'],function($,appendBanner){
         })
     };
 
-    // var liNodeListen = function(node){
-    //     node.on('click',function(){
-
-    //     })
-    // }
     return switchTabModule;
 })
