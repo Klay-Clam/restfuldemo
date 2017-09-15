@@ -5,22 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://raw.githubusercontent.com/Klay-Clam/Tank/master/public/images/logo.png" type="image/x-icon"
+    />
     <link rel="stylesheet" href="/stylesheets/style.css">
     <title>Sesame 论坛</title>
 </head>
 
 <body>
+    <!-- header -->
     <header>
-        <span>Content</span>
+        <span>Sesame BBS</span>
     </header>
 
+    <div class="content">
+        <!-- topics  -->
+        <div class="topic">
+            <div>
+                <h3 class="topic-title">test title</h3>
+                <div class="topic-msg">
+                    <label>author</label>
+                    <label>2017.09.15</label>
+                </div>
+            </div>
+            <div class="topic-body">
+                <div>
+                    topic content topic content topic content topic content<br> topic content topic content topic content
+                    topic content
+                </div>
+            </div>
+            <div class="topic-tags">
+                    <span class="topic-tag"><img src="/images/tag.png">日常</span>
+                    <span class="topic-tag"><img src="/images/tag.png">日常</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- 底部的导航 -->
     <footer>
         <ul>
-            <li><img src="/images/homeact.png" alt=""></li>
-            <li><img src="/images/menu.png" alt=""></li>
-            <li><img src="/images/me.png" alt=""></li>
+            <li id="tab-home">
+                <img src="/images/homeact.png" alt=""><br>
+                <span>home</span>
+            </li>
+            <li id="tab-menu">
+                <img src="/images/menu.png" alt=""><br>
+                <span>menu</span>
+            </li>
+            <li id="tab-me">
+                <img src="/images/me.png" alt=""><br>
+                <span>me</span>
+            </li>
         </ul>
     </footer>
+    <script data-main="/javascripts/main" src="/javascripts/require.js"></script>    
 </body>
-
 </html>
