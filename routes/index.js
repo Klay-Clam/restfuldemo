@@ -44,7 +44,7 @@ router.post('/users/login',function (req,res,next){
     let conditions = { "email": req.body.email, "password": req.body.pwd };
     let update = { "lastLoginTime": new Date(), "firstLogin": false };
     users.findOneAndUpdate(conditions, update, function (error, result) {
-      
+       
       try{
         console.log("hashed: " + (result.password === req.body.pwd));
 
@@ -57,7 +57,28 @@ router.post('/users/login',function (req,res,next){
   }
 })
 
-router.get('/content',function(req,res,next){
+/**
+ * 用户登录成功进入到 所有topics页面
+ */
+router.get('/content',(req,res,next) => {
   res.render('content');
-})
+});
+
+router.get('/content/topics',(req,res,next) => {
+  // res.send("get all data of topics");
+  /**
+   * 进行数据库查询
+   * 查询并返回所有的topics
+   */
+  topics.find({},(err,result) => {
+    if(err){
+      console.log(err);
+      res.send(false);
+    }else{
+      console.log(result);
+      res.send(result);
+    }
+  })
+});
+
 module.exports = router;

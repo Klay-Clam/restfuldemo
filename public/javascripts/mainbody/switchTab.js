@@ -18,7 +18,9 @@ define("switchTab",['jquery','appendBanner'],function($,appendBanner){
                                 $(liNode[index+2]).children('img').attr('src','/images/me.png');
 
                                 // 加载页面主体 topics
-                                
+                                require(['appendBanner'],function(banner){
+                                    console.log(banner.appendTopics());
+                                })
                             }
 
                         });

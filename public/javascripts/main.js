@@ -8,6 +8,7 @@ require.config({
         "toast": "templates/toast",
         "topic":"templates/topic",
         "menu":"template/menu",
+        "me":"templates/me",
         "switchTab":"mainbody/switchTab",
         "appendBanner":"mainbody/appendBanner", 
         "sha1":"sha1"

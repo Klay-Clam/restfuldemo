@@ -3,5 +3,6 @@ define("menu", [], function () {
 
     var menuModule = {};
 
+    var tagCloudTemp = "这里是论坛的标签云";
     return menuModule;
 })

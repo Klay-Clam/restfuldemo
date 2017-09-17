@@ -2,46 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2585f37b-a053-442b-91b1-7899bff17b88" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/.jshintignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/README-CN.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/css/light7-swipeout.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/css/light7-swiper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/css/light7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-f7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-calendar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-comment.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-email.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-gender.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-name.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-password.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-settings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-tel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-toggle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-form-url.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-list-chevron-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/img/i-sortable-handler.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/i18n/cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/i18n/cn.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/light7-city-picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/light7-city-picker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/light7-swipeout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/light7-swiper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/light7-swiper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/light7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/dist/js/light7.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/light7/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/light7-swiper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/light7-swiper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/light7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/light7.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/login.js" afterPath="$PROJECT_DIR$/public/javascripts/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/main.js" afterPath="$PROJECT_DIR$/public/javascripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/mainbody/appendBanner.js" afterPath="$PROJECT_DIR$/public/javascripts/mainbody/appendBanner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/mainbody/switchTab.js" afterPath="$PROJECT_DIR$/public/javascripts/mainbody/switchTab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/templates/me.js" afterPath="$PROJECT_DIR$/public/javascripts/templates/me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/templates/menu.js" afterPath="$PROJECT_DIR$/public/javascripts/templates/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/templates/topic.js" afterPath="$PROJECT_DIR$/public/javascripts/templates/topic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/content.ejs" afterPath="$PROJECT_DIR$/views/content.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,17 +24,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4122449">
+    <splitter split-orientation="horizontal" split-proportion="0.56412476">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/views/index.ejs">
+          <file leaf-file-name="appendBanner.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/javascripts/mainbody/appendBanner.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-                  <folding>
-                    <marker date="1505119941977" expanded="true" signature="761:883" ph="..." />
-                  </folding>
+                <state relative-caret-position="405">
+                  <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="switchTab.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/javascripts/mainbody/switchTab.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="378">
+                  <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -74,11 +51,33 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
+          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                <state relative-caret-position="342">
+                  <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+                  <folding>
+                    <marker date="1505461337431" expanded="true" signature="2401:2422" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="topic.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/javascripts/templates/topic.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="content.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/content.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -114,6 +113,10 @@
         <option value="$PROJECT_DIR$/datacase.js" />
         <option value="$PROJECT_DIR$/public/javascripts/login.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/mainbody/switchTab.js" />
+        <option value="$PROJECT_DIR$/views/content.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/templates/topic.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/mainbody/appendBanner.js" />
       </list>
     </option>
   </component>
@@ -148,6 +151,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,12 +165,28 @@
               <item name="RESEfulDemo" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RESEfulDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RESEfulDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RESEfulDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RESEfulDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+              <item name="mainbody" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RESEfulDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RESEfulDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,16 +233,18 @@
       <workItem from="1504841220200" duration="758000" />
       <workItem from="1504841988791" duration="5825000" />
       <workItem from="1505091609998" duration="2253000" />
+      <workItem from="1505613530911" duration="3971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24926000" />
+    <option name="totallyTimeSpent" value="28897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.088541664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14136904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -257,10 +280,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <marker date="1505461337431" expanded="true" signature="2401:2422" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
           <folding>
-            <marker date="1505119941977" expanded="true" signature="761:883" ph="..." />
+            <marker date="1505461337431" expanded="true" signature="2401:2422" ph="..." />
           </folding>
         </state>
       </provider>
@@ -278,7 +319,7 @@
         <state relative-caret-position="1044">
           <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
           <folding>
-            <marker date="1505119941977" expanded="true" signature="761:883" ph="..." />
+            <marker date="1505461337431" expanded="true" signature="2401:2422" ph="..." />
           </folding>
         </state>
       </provider>
@@ -296,7 +337,7 @@
         <state relative-caret-position="1044">
           <caret line="58" column="22" lean-forward="true" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
           <folding>
-            <marker date="1505119941977" expanded="true" signature="761:883" ph="..." />
+            <marker date="1505461337431" expanded="true" signature="2401:2422" ph="..." />
           </folding>
         </state>
       </provider>
@@ -314,7 +355,7 @@
         <state relative-caret-position="810">
           <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
           <folding>
-            <marker date="1505119941977" expanded="true" signature="761:883" ph="..." />
+            <marker date="1505461337431" expanded="true" signature="2401:2422" ph="..." />
           </folding>
         </state>
       </provider>
@@ -355,27 +396,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/light7.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="529" lean-forward="false" selection-start-line="6" selection-start-column="529" selection-end-line="6" selection-end-column="529" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/light7.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-559">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/light7-swiper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19961">
-          <caret line="3121" column="18" lean-forward="false" selection-start-line="3121" selection-start-column="18" selection-end-line="3121" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/light7.min.js" />
+    <entry file="file://$PROJECT_DIR$/public/javascripts/light7.js" />
+    <entry file="file://$PROJECT_DIR$/public/javascripts/light7-swiper.js" />
     <entry file="file://$PROJECT_DIR$/datacase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -383,20 +406,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/templates/toast.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="342">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
-            <marker date="1505119941977" expanded="true" signature="761:883" ph="..." />
+            <marker date="1505461337431" expanded="true" signature="2401:2422" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/mainbody/switchTab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/content.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/templates/topic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/mainbody/appendBanner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
           <folding />
         </state>
       </provider>
