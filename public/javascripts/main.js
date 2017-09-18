@@ -7,7 +7,7 @@ require.config({
         "showPwd" : "login/showPwd",
         "toast": "templates/toast",
         "topic":"templates/topic",
-        "menu":"template/menu",
+        "menu":"templates/menu",
         "me":"templates/me",
         "switchTab":"mainbody/switchTab",
         "appendBanner":"mainbody/appendBanner", 
@@ -30,5 +30,8 @@ require(['jquery','sha1'],function($,hex_sha1){
     });
     require(['switchTab'],function(switchTab){
         switchTab();
+    });
+    require(['appendBanner'],function(banner){
+        banner.appendTopics();
     })
-})
+});

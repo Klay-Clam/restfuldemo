@@ -194,7 +194,9 @@ body .main .toast{
 .content .topic .topic-tags{
   color: #0894EC;
   font-size: 1em;
+  margin-left: 3px;
 }
-.content .topic .topic-tags img {
-  width: 1em;
+
+.content .topic .topic-tags:first-of-type{
+  margin-left:1px;
 }

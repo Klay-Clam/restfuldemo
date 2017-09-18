@@ -17,19 +17,30 @@ define('appendBanner',['jquery'],function($){
             success:function(data){
                 if(data){
                     require(['topic'],function(topics){
+                        $('#bbsBody').html('');
                         // console.log(data);
                         // console.log(topics.noTopic);
-                        for(var i = 0; i < data.length; i++){
+                        for(let i = 0; i < data.length; i++){
                             $('#bbsBody').append(topics.topicTemp);
 
                             // 插入数据
-                            $('.topic-title').text(data[i].title);
-                            $('.author').text(data[i].owns);
-                            $('.publishTime').text(data[i].publisheTime);
+                            // $('#bbsBody .topic-title:last-child h3').text(data[i].title);
+                            //console.log($('#bbsBody')[0].children.length);
+                            let lastChild = $('#bbsBody')[0].children.length - 1;
+                            // console.log($('#bbsBody .topic-title')[lastChild]);
+                            $('#bbsBody .topic-title')[lastChild].innerText = data[i].title;
 
-                            $('.topic-body div').text(data[i].content);
+                            $('#bbsBody .author')[lastChild].innerText = data[i].owns;
+                            $('#bbsBody .publishTime')[lastChild].innerText = data[i].publisheTime;
 
-                            // 插入标签
+                            $('#bbsBody .topic-body div')[lastChild].innerText = data[i].content;
+
+                            // 插入tags
+                            for(let t = 0;t < data[i].tags.length;t++){
+                                // console.log(data[i].tags[t]);
+                                $('#bbsBody .topic-tags')[lastChild].innerHTML += topics.tagTemp;
+                                $('#bbsBody .topic-tags .topic-tag')[lastChild].innerText += data[i].tags[t];
+                            }
                         }
                     });
                 }else{
@@ -39,8 +50,6 @@ define('appendBanner',['jquery'],function($){
                 }
             }
         });
-
-        return 0;
     };
     // 加载 mene
     var appendMenu = function(){
@@ -49,6 +58,11 @@ define('appendBanner',['jquery'],function($){
          * 然后发起一个Ajax请求
          * 获取所有的tags数据，插入到页面结构中去
          */
+        require(['menu'],function (menu) {
+            //alert(menu.tag);
+            //$('#bbsBody').html(menu.tagCloudTemp);
+            $('#bbsBody').html(menu.tagCloudTemp);
+        });
     };
     // 加载 me
     var appendMe = function(){
@@ -57,11 +71,16 @@ define('appendBanner',['jquery'],function($){
          * 然后发起一个 Ajax 请求
          * 获取所有的 me 数据，插入到页面结构中去
          */
-    }
+        require(['me'],function (me) {
+            //alert(menu.tag);
+            //$('#bbsBody').html(menu.tagCloudTemp);
+            $('#bbsBody').html(me.userIntroductionDiv);
+        });
+    };
 
     AppendBannerToMainBodyModule.appendTopics = appendTopics;
     AppendBannerToMainBodyModule.appendMenu = appendMenu;
     AppendBannerToMainBodyModule.appendMe = appendMe;
 
     return AppendBannerToMainBodyModule;
-})
+});

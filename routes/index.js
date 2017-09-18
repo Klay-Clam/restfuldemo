@@ -75,7 +75,7 @@ router.get('/content/topics',(req,res,next) => {
       console.log(err);
       res.send(false);
     }else{
-      console.log(result);
+      console.log("------ get all topics success ------");
       res.send(result);
     }
   })

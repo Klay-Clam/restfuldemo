@@ -19,7 +19,7 @@ define("switchTab",['jquery','appendBanner'],function($,appendBanner){
 
                                 // 加载页面主体 topics
                                 require(['appendBanner'],function(banner){
-                                    console.log(banner.appendTopics());
+                                    banner.appendTopics();
                                 })
                             }
 
@@ -37,7 +37,10 @@ define("switchTab",['jquery','appendBanner'],function($,appendBanner){
                                 $(liNode[index+1]).children('img').attr('src','/images/me.png');
                             
                                 // 加载页面主体 menu
-
+                                require(['appendBanner'],function(banner){
+                                    //console.log(banner.appendMenu());
+                                    banner.appendMenu()
+                                })
                             }
                         });
                     })()
@@ -53,6 +56,10 @@ define("switchTab",['jquery','appendBanner'],function($,appendBanner){
                                 $(liNode[index]).children('img').attr('src','/images/meact.png');
                                 
                                 // 加载页面主体 me
+                                require(['appendBanner'],function(banner){
+                                    //console.log(banner.appendMenu());
+                                    banner.appendMe();
+                                })
                             }
                         });
                     })()
