@@ -36,5 +36,13 @@
 
     接下来，写首页的布局和模块，初步的想法是，将需要动态加载的DOM结构，作为模块保存，在需要使用的时候require就好啦。
 
+> 2017.09.18 14:00
+
+    首页的数据已经可以自动的动态的渲染上去。
     
+    然后其他两个页面(menu和me)的模板文件还没有编写，但是页面的跳转和刷新已经实现啦
+    
+    接下来，我要编写menu和me的页面，以及页面的数据的加载等代码。
+   
+![运行截图](https://raw.githubusercontent.com/Klay-Clam/restfuldemo/master/public/images/sesamedemo.gif)
     
