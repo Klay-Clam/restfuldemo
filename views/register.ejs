@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RESTful Demo</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="https://raw.githubusercontent.com/Klay-Clam/Tank/master/public/images/logo.png" type="image/x-icon"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
@@ -29,6 +24,11 @@
                     </div>
                     <div class="input-line">
                         <label for="password"><img src="/images/password.png" alt=""></label>
+                        <input type="password" id="input_password" placeholder="password" maxlength="20" minlength="5" class="">
+                        <label for="password" id="confirm_showPwd"><img src="/images/hidepwd.png" class="checkImg" alt=""></label>
+                    </div>
+                    <div class="input-line">
+                        <label for="password"><img src="/images/password.png" alt=""></label>
                         <input type="password" id="password" placeholder="password" maxlength="20" minlength="5" class="">
                         <label for="password" id="showPwd"><img src="/images/hidepwd.png" class="checkImg" alt=""></label>
                     </div>
@@ -37,7 +37,7 @@
                 <div class="login-choose-group">
                     <!-- 登录按钮 -->
                     <div class="login-btn-banner">
-                        <button id="loginBtn">登 录</button>
+                        <button id="loginBtn">注册</button>
                     </div>
                     <!-- 其他登录选项 -->
                     <div class="other-btn-group">
@@ -48,7 +48,5 @@
             </div>
         </div>
     </div>
-
-    <script data-main="/javascripts/main" src="/javascripts/require.js"></script>
 </body>
 </html>

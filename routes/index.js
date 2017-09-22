@@ -81,4 +81,8 @@ router.get('/content/topics',(req,res,next) => {
   })
 });
 
+// 用户注册
+router.get('/register',(req,res,next)=>{
+  res.render('register');
+})
 module.exports = router;
