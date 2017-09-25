@@ -45,4 +45,10 @@
     接下来，我要编写menu和me的页面，以及页面的数据的加载等代码。
    
 ![运行截图](https://raw.githubusercontent.com/Klay-Clam/restfuldemo/master/public/images/sesamedemo.gif)
+
+> 2017.9.25 15:27
+
+    写到现在，一些语气的功能做出来了，看起来额，还是真的丑啊。细节的地方也没有认真的写。
+
+![运行截图](https://raw.githubusercontent.com/Klay-Clam/restfuldemo/master/public/images/demolog.gif)
     
