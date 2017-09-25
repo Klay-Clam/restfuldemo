@@ -80,7 +80,34 @@ router.get('/content/topics',(req,res,next) => {
     }
   })
 });
-
+router.get('/menu/tags',function(req,res,next){
+  topics.find({},(err,result)=>{
+    var tagsContent = [];
+    var tags = [];
+    // result;
+    for(let i = 0; i < result.length; i++){
+      // tags.push(result[i].tags);
+      var docTagArr = result[i]._doc.tags;
+      tagsContent.push(result[i]._doc.tags);
+    }
+    for(let i = 0;i < tagsContent.length;i++){
+      tagsContent[i];
+      if(Array.isArray(tagsContent[i])){
+        for(let j = 0;j < tagsContent[i].length;j++){
+          if(!tags.indexOf(tagsContent[i][j])){
+            tags = tags;
+          }else{
+            tags.push(tagsContent[i][j]);
+          }
+        }
+      }
+    }
+    console.log(tags);
+    console.log('--- all tags have been sent ---');
+    // tags = Array.from(new Set(tags));
+    res.send(tags);
+  })
+})
 // 用户注册
 router.get('/register',(req,res,next)=>{
   res.render('register');

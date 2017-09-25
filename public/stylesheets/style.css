@@ -200,3 +200,14 @@ body .main .toast{
 .content .topic .topic-tags:first-of-type{
   margin-left:1px;
 }
+.tags-style{
+  color: black;
+  border:1px solid #5283e0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 35px;
+  height: 35px;
+  padding: 0 4px;
+}

@@ -24,10 +24,7 @@ define('appendBanner',['jquery'],function($){
                             $('#bbsBody').append(topics.topicTemp);
 
                             // 插入数据
-                            // $('#bbsBody .topic-title:last-child h3').text(data[i].title);
-                            //console.log($('#bbsBody')[0].children.length);
                             let lastChild = $('#bbsBody')[0].children.length - 1;
-                            // console.log($('#bbsBody .topic-title')[lastChild]);
                             $('#bbsBody .topic-title')[lastChild].innerText = data[i].title;
 
                             $('#bbsBody .author')[lastChild].innerText = data[i].owns;
@@ -36,6 +33,7 @@ define('appendBanner',['jquery'],function($){
                             $('#bbsBody .topic-body div')[lastChild].innerText = data[i].content;
 
                             // 插入tags
+                            var len = data[i].tags.length;
                             for(let t = 0;t < data[i].tags.length;t++){
                                 // console.log(data[i].tags[t]);
                                 $('#bbsBody .topic-tags')[lastChild].innerHTML += topics.tagTemp;
@@ -58,16 +56,48 @@ define('appendBanner',['jquery'],function($){
          * 然后发起一个Ajax请求
          * 获取所有的tags数据，插入到页面结构中去
          */
+        let bgColors = [
+            '#5283E0',
+            '#33B8E0',
+            '#5EE0C5',
+            '#13E098',
+            '#B6E093',
+            '#7274E0'
+        ];
+        // let bgColorIndex = Math.floor(Math.random()*6 + 1);
+        // console.log(bgColorIndex);
         require(['menu'],function (menu) {
             //alert(menu.tag);
             //$('#bbsBody').html(menu.tagCloudTemp);
             $('#bbsBody').html(menu.tagCloudTemp);
+            /*$('#bbsBody .container').append(menu.tagTemp);
+            $('#bbsBody .container span').addClass('tags-style');
+            $('#bbsBody .container span').css('bg-color',bgColors[bgColorIndex-1]);*/
+            $.ajax({
+                url:'/menu/tags',
+                type:'GET',
+                dataType:'json',
+                success:function (data) {
+                    console.log(data);
+                    for(let i = 0;i < data.length;i++){
+                        var bgColorIndex = Math.floor(Math.random()*6 + 1);
+
+                        $('#bbsBody .container').append(menu.tagTemp);
+                        //var lastChildIndex = $('.tags-style').length - 1;
+                        $('.tags-style')[i].innerText = data[i];
+                        $('.tags-style')[i].style.backgroundColor = bgColors[bgColorIndex-1];
+                    }
+                },
+                error:function (err) {
+                    console.log(err);
+                }
+            })
         });
     };
     // 加载 me
     var appendMe = function(){
         /**
-         * 首先将 DOM 架构 append 到页面中去
+         * 首先将 DOM 结构 append 到页面中去
          * 然后发起一个 Ajax 请求
          * 获取所有的 me 数据，插入到页面结构中去
          */
