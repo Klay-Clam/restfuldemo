@@ -48,7 +48,7 @@
 
 > 2017.9.25 15:27
 
-    写到现在，一些语气的功能做出来了，看起来额，还是真的丑啊。细节的地方也没有认真的写。
+    写到现在，一些预期的功能做出来了，看起来额，还是真的丑啊。细节的地方也没有认真的写。
 
 ![运行截图](https://raw.githubusercontent.com/Klay-Clam/restfuldemo/master/public/images/demolog.gif)
     
